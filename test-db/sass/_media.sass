@@ -1,0 +1,251 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1280px)
+	/**/
+	.wrapper
+		max-width: 1024px
+
+	.menu
+		ul
+			margin-left: 106px
+			li
+				margin: 25px 7px
+
+	.lang-panel
+		ul
+			margin-left: 10px
+			li
+				margin: 25px 10px
+
+	.search
+		margin: 24px 0 0 20px
+
+	.slider
+		padding: 25px 70px
+
+	.owl-carousel
+		.owl-nav
+			max-width: 1024px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px)
+	/**/
+	// Top-banner
+	.top-banner		
+		font-size: 12px
+		font-weight: normal
+		p			
+			max-width: 680px
+	// Menu
+	.menu
+		display: none
+
+	.wrapper
+		padding-top: 10px
+		padding-bottom: 10px
+	
+	.lang-panel, .search		
+		float: none
+		display: block
+		position: absolute
+	.lang-panel
+		right: 80px
+		top: -2px
+	.search
+		right: 20px
+		top: -2px
+
+	.menu-button
+		display: block
+		margin: auto
+		outline: none
+		padding-bottom: 4px
+		padding-top: 12px
+		background-color: inherit
+		color: #292929
+		border-radius: 6px
+		border: 2px solid $active		
+		.text-box
+			display: inline-block
+			margin-right: 20px
+			text-transform: uppercase
+			font-weight: 900
+			font-size: 18px
+			line-height: 0
+	
+	nav.menu-active
+		display: block
+		position: absolute
+		z-index: 100
+		width: 80%
+		top: 80px
+		margin-left: auto
+		margin-right: auto
+		left: 0
+		right: 0
+		border-radius: 3px
+		background-color: #0066a1
+		opacity: .95
+		ul
+			margin: 0
+			text-align: center
+			li
+				display: block
+				margin: 0
+				a	
+					display: block
+					padding: 20px 0
+					color: #fff
+					font-size: 18px
+					line-height: 16px
+					transition: font-size 0.15s ease, font-weight 0.15s ease
+					&::after
+						display: none
+					&:hover
+						color: #fff
+						font-size: 20px
+						font-weight: 900
+						&::after
+							display: none
+				&.active
+					a
+						color: #fff
+						font-size: 20px
+						font-weight: 900
+						&::after
+							display: none
+	
+	// Slider
+	.slider
+		padding: 25px 60px
+		h1
+			margin-bottom: 40px
+			font-size: 22px
+			line-height: 15.94px
+		&-item
+			padding: 20px 50px 35px
+			h2
+				font-size: 11px
+			p
+				font-size: 	26px
+			button
+				margin-top: 23px
+				padding: 17px 27px 15px 30px
+				font-size: 10px
+	
+	.owl-carousel
+		.owl-nav
+			max-width: 768px
+		.owl-dots
+			margin-top: 25px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	// Top-banner
+	.top-banner
+		position: relative
+		text-align: left		
+		padding: 6px 0
+		font-size: 12px
+		font-weight: normal
+		p
+			position: static
+			max-width: 85%
+			margin: 0 0 0 10px
+
+	.close
+		margin-top: auto
+		margin-bottom: auto
+		top: 0
+		bottom: 0
+	
+	// Header
+	nav.menu-active
+		width: 90%
+
+	.lang-panel
+		right: 13%
+		top: 10px
+		ul
+			li
+				display: block
+				margin: 0 10px
+				a
+					font-size: 16px
+				&:last-child
+					&::before
+						display: none
+	.search
+		right: 3%
+		top: -2px
+		
+	.show-search
+		padding: 10px
+		button
+			padding: 4px 10px
+
+	.menu-button				
+		.text-box
+			display: none
+
+	// Slider
+	.slider
+		padding: 40px 20px
+		h1
+			margin-bottom: 40px
+			font-size: 16px
+			line-height: 15.94px
+		&-item
+			padding: 20px 15px 35px
+			h2
+				font-size: 11px
+			p
+				font-size: 	20px
+			button
+				margin-top: 23px
+				padding: 17px 27px 15px 30px
+				font-size: 10px
+	
+	.owl-carousel
+		.owl-nav
+			max-width: 90%
+			
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.slider
+		padding: 30px 10px
+		h1
+			margin-bottom: 40px
+			font-size: 16px
+			line-height: 15.94px
+		&-item
+			padding: 20px 10px 35px
+			h2
+				font-size: 11px
+			p
+				font-size: 	16px
+			button
+				margin-top: 23px
+				padding: 17px 27px 15px 30px
+				font-size: 10px
+
+	.owl-carousel
+		.owl-nav
+			.owl-prev, .owl-next
+				top: -24px
+			.owl-prev
+				left: 40px
+			.owl-next
+				right: 40px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+

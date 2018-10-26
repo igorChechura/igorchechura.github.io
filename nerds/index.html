@@ -209,6 +209,29 @@
 		</footer>
 	</main>
 
+	<section class="modal modal-contact">
+		<h2 class="visually-hidden">Форма обратной связи</h2>
+		<p class="modal-description">Напишите нам</p>
+		<form class="contact-form" action="https://echo.htmlacademy.ru" method="POST">
+			<div class="form-columns">
+				<div class="form-columns-item">
+					<label for="contact-name">Ваше имя:</label>
+					<input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
+				</div>				
+				<div  class="form-columns-item">
+					<label for="contact-email">Ваш e-mail:</label>
+					<input id="contact-email" type="text" name="email" placeholder="email@example.com">
+				</div>
+			</div>			
+			<label for="contact-text">Текст письма:</label>
+			<textarea id="contact-text" name="text" placeholder="В свободной форме"></textarea>
+			<button class="button" type="submit">Отправить</button>
+		</form>
+		<button class="modal-close" type="button">Закрыть</button>
+	</section>
+	
+	<div class="modal-overlay"></div>
+
 	<script src="js/main.js"></script>
 </body>
 </html>

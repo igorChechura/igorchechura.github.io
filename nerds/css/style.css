@@ -1010,3 +1010,16 @@ input[type="radio"].visually-hidden {
 }
 
 /* section.modal-contact end */
+
+/* catalog page styles */
+
+.inner-heading {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+    background-color: #eeeeee;
+}
+
+.inner-heading h1 {
+    text-align: center;
+}

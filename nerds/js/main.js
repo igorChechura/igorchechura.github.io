@@ -22,9 +22,10 @@ function showSlider() {
 	for (var i = 0; i < featuresSliderButtons.length; i++) {
 		featuresSliderButtons[i].addEventListener('click', changeSlide);
 	}
-}
+} // end slider
 
 showSlider();
+
 
 /* modal contact us */
 
@@ -96,7 +97,7 @@ function toggleModal() {
 	modalOverlay.addEventListener('click', modalHide);
 	modalClose.addEventListener('click', modalHide);
 
-}
+} // end toggleModal
 
 toggleModal();
 

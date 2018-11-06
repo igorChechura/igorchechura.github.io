@@ -89,16 +89,22 @@
 			<section class="catalog">
 				<h2 class="visually-hidden">Список шаблонов</h2>
 				<div class="sort-columns">
-				    <span>Сортировать:</span>
+				    <h3>Сортировать:</h3>
                     <div class="sort-inner-columns">
                         <ul class="sort-list">
-                            <li><a href="#">По цене</a></li>
-                            <li><a href="#">По типу</a></li>
-                            <li><a href="#">По названию</a></li>
+                            <li class="sort-item sort-item-current">По цене</li>
+                            <li class="sort-item"><a href="#">По типу</a></li>
+                            <li class="sort-item"><a href="#">По названию</a></li>
                         </ul>
                         <div class="sort-columns-arrows">
-                            <a href="#"><span class="visually-hidden">Сортировать по убыванию</span></a>
-                            <a href="#"><span class="visually-hidden">Сортировать по возрастанию</span></a>
+                            <a class="sort-arrow sort-arrow-current" href="#">
+								<span class="visually-hidden">Сортировать по убыванию</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ededed" d="M5.5 10L0 0h11"/></svg>
+							</a>
+                            <a class="sort-arrow" href="#">
+								<span class="visually-hidden">Сортировать по возрастанию</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ededed" d="M5.5 0L0 10h11z"/></svg>
+							</a>
                         </div>
                     </div>                   
 				</div>

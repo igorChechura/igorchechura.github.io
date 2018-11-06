@@ -1191,6 +1191,92 @@ input[type="radio"].visually-hidden {
 .sort-columns {
 	display: flex;
 	justify-content: space-between;
+
+	margin-bottom: 50px;
+}
+
+.sort-columns h3 {
+	margin: 0;
+
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.sort-inner-columns {
+	display: flex;
+	justify-content: space-between;
+
+	width: 360px;
+}
+
+.sort-list {
+	display: flex;
+	flex-wrap: wrap;
+	
+	max-width: 300px;
+	padding: 0;
+	margin: 0;
+
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #b2b2b2;
+
+	list-style: none;
+}
+
+.sort-item {
+	margin-right: 27px;
+}
+
+.sort-item:last-child {
+	margin-right: 0;
+}
+
+.sort-item a {
+	color: inherit;
+}
+
+.sort-item a:hover,
+.sort-item a:focus {
+	color: #666666;
+}
+
+.sort-item-current,
+.sort-item a:active {
+	color: #000000;
+}
+
+.sort-columns-arrows {
+	display: flex;
+	flex-wrap: wrap;
+
+	max-width: 50px;
+}
+
+.sort-arrow {
+	margin-left: 18px;
+
+	line-height: 1;
+}
+
+.sort-arrow:first-child {
+	margin-left: 0;
+}
+
+.sort-arrow:hover path,
+.sort-arrow:focus path {
+	fill: #a6a6a6;
+}
+
+.sort-arrow-current path,
+.sort-arrow-current:hover path,
+.sort-arrow-current:focus path,
+.sort-arrow:active path {
+	fill: #231f20;
 }
 
 .catalog {

@@ -1,0 +1,61 @@
+<svg id="Arrow_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="127.594" height="33" viewBox="0 0 127.594 33">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #9aca40;
+        stroke-linecap: round;
+        stroke-width: 2px;
+        stroke-dasharray: 0.001 4;
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #709dca;
+      }
+    </style>
+    <filter id="filter" x="494" y="3405" width="111.625" height="26.53" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#76a1cc"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-485.406 -3404)" style="fill: none; filter: url(#filter)">
+    <path id="path" class="cls-1" d="M494.376,3427.26c64.828-51.8,111.373,3.06,111.373,3.06" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-485.406 -3404)" xlink:href="#path" style="stroke: #9aca40; filter: none; fill: none"/>
+  <path class="cls-2" d="M485.4,3433.53l10.673,0.2-7.959-10.52-2.714,10.32" transform="translate(-485.406 -3404)"/>
+  <path id="Shape_3_copy" data-name="Shape 3 copy" class="cls-2" d="M613,3436.8l-11.017.21,8.215-11.02,2.8,10.81" transform="translate(-485.406 -3404)"/>
+</svg>

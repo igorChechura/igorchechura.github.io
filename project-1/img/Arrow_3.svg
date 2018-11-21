@@ -1,0 +1,79 @@
+<svg id="Arrow_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="127.59" height="33" viewBox="0 0 127.59 33">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #9aca40;
+        stroke-linecap: round;
+        stroke-width: 2px;
+        stroke-dasharray: 0.001 4;
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #9aca40;
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        filter: url(#filter-3);
+      }
+    </style>
+    <filter id="filter" x="1094" y="3405" width="111.63" height="26.53" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#76a1cc"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="1085.41" y="3423.22" width="10.65" height="10.5" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#76a1cc"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="1202" y="3426" width="11" height="11" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#76a1cc"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-1085.41 -3404)" style="fill: none; filter: url(#filter)">
+    <path id="Shape_2_copy" data-name="Shape 2 copy" class="cls-1" d="M1094.38,3427.26c64.82-51.8,111.37,3.06,111.37,3.06" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-1085.41 -3404)" xlink:href="#Shape_2_copy" style="stroke: #9aca40; filter: none; fill: none"/>
+  <path id="Shape_3_copy_2" data-name="Shape 3 copy 2" class="cls-2" d="M1085.4,3433.53l10.68,0.2-7.96-10.52-2.72,10.32" transform="translate(-1085.41 -3404)"/>
+  <path id="Shape_3_copy_2-2" data-name="Shape 3 copy 2" class="cls-3" d="M1213,3436.8l-11.01.21,8.21-11.02,2.8,10.81" transform="translate(-1085.41 -3404)"/>
+</svg>

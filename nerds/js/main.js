@@ -101,3 +101,51 @@ function toggleModal() {
 
 toggleModal();
 
+/* product card animation */
+
+var catalogItem = document.querySelectorAll('.catalog-item');
+var catalogItemLink = document.querySelectorAll('.catalog-item .catalog-item-link');
+var catalogItemButton = document.querySelectorAll('.catalog-item .catalog-item-button');
+var catalogItemBuy = document.querySelectorAll('.catalog-item .catalog-item-buy');
+
+for (let i = 0; i < catalogItem.length; i++) {
+	catalogItem[i].hasFocus = false;
+
+	catalogItemBuy[i].classList.add('visually-hidden');
+
+	catalogItem[i].addEventListener('mouseenter', function(evt){
+		var catalogItemBuy = this.querySelector('.catalog-item-buy');
+		catalogItemBuy.classList.remove('visually-hidden');
+	});
+
+	catalogItemLink[i].addEventListener('focus', function(evt){
+		var catalogItemBuy = catalogItem[i].querySelector('.catalog-item-buy');
+		catalogItemBuy.classList.remove('visually-hidden');
+		catalogItem[i].hasFocus = true;
+	});
+
+	catalogItemLink[i].addEventListener('blur', function(evt){
+		var catalogItemBuy = catalogItem[i].querySelector('.catalog-item-buy');
+		catalogItemBuy.classList.add('visually-hidden');
+		catalogItem[i].hasFocus = false;
+	});
+
+	catalogItemButton[i].addEventListener('focus', function(evt){
+		var catalogItemBuy = catalogItem[i].querySelector('.catalog-item-buy');
+		catalogItemBuy.classList.remove('visually-hidden');
+		catalogItem[i].hasFocus = true;
+	});
+
+	catalogItemButton[i].addEventListener('blur', function(evt){
+		var catalogItemBuy = catalogItem[i].querySelector('.catalog-item-buy');
+		catalogItemBuy.classList.add('visually-hidden');
+		catalogItem[i].hasFocus = false;
+	});
+
+	catalogItem[i].addEventListener('mouseleave', function(evt){
+		var catalogItemBuy = this.querySelector('.catalog-item-buy');
+		if(!catalogItem[i].hasFocus) {
+			catalogItemBuy.classList.add('visually-hidden');
+		}		
+	});
+}

@@ -101,51 +101,90 @@ function toggleModal() {
 
 toggleModal();
 
+/* noUiSlider */
+
+function renderPriceFilter() {
+	var rangeSlider = document.getElementById('rangeSlider');
+
+	noUiSlider.create(rangeSlider, {
+		start: [2000, 10000],
+		padding: [0, 1300],
+		connect: true,
+		range: {
+			'min': 0,
+			'max': 21300
+		}
+	});
+	
+	function setPrice() {
+		var noUiHandleLower = document.querySelector('.noUi-handle-lower');
+		var noUiHandleUpper = document.querySelector('.noUi-handle-upper');
+	
+		var priceFrom = document.getElementById('price-from');
+		var priceTo = document.getElementById('price-to');
+	
+		priceFrom.setAttribute('value', Math.round(noUiHandleLower.getAttribute('aria-valuetext')));
+		priceTo.setAttribute('value', Math.round(noUiHandleUpper.getAttribute('aria-valuetext')));
+	
+		priceFrom.setAttribute('readonly', true);
+		priceTo.setAttribute('readonly', true);
+	}
+	
+	setPrice();
+	
+	rangeSlider.noUiSlider.on('update', setPrice);
+}
+
+renderPriceFilter();
+
+/* end noUiSlider */
+
 /* product card animation */
 
-var catalogItem = document.querySelectorAll('.catalog-item');
-var catalogItemLink = document.querySelectorAll('.catalog-item .catalog-item-link');
-var catalogItemButton = document.querySelectorAll('.catalog-item .catalog-item-button');
-var catalogItemBuy = document.querySelectorAll('.catalog-item .catalog-item-buy');
-
-for (let i = 0; i < catalogItem.length; i++) {
-	catalogItem[i].hasFocus = false;
-
-	catalogItemBuy[i].classList.add('visually-hidden');
-
-	catalogItem[i].addEventListener('mouseenter', function(evt){
-		var catalogItemBuy = this.querySelector('.catalog-item-buy');
-		catalogItemBuy.classList.remove('visually-hidden');
-	});
-
-	catalogItemLink[i].addEventListener('focus', function(evt){
-		var catalogItemBuy = catalogItem[i].querySelector('.catalog-item-buy');
-		catalogItemBuy.classList.remove('visually-hidden');
-		catalogItem[i].hasFocus = true;
-	});
-
-	catalogItemLink[i].addEventListener('blur', function(evt){
-		var catalogItemBuy = catalogItem[i].querySelector('.catalog-item-buy');
-		catalogItemBuy.classList.add('visually-hidden');
+function animateProductCard() {
+	var catalogItem = document.querySelectorAll('.catalog-item');
+	var catalogItemLink = document.querySelectorAll('.catalog-item .catalog-item-link');
+	var catalogItemButton = document.querySelectorAll('.catalog-item .catalog-item-button');
+	var catalogItemBuy = document.querySelectorAll('.catalog-item .catalog-item-buy');
+		
+	for (let i = 0; i < catalogItem.length; i++) {
 		catalogItem[i].hasFocus = false;
-	});
-
-	catalogItemButton[i].addEventListener('focus', function(evt){
-		var catalogItemBuy = catalogItem[i].querySelector('.catalog-item-buy');
-		catalogItemBuy.classList.remove('visually-hidden');
-		catalogItem[i].hasFocus = true;
-	});
-
-	catalogItemButton[i].addEventListener('blur', function(evt){
-		var catalogItemBuy = catalogItem[i].querySelector('.catalog-item-buy');
-		catalogItemBuy.classList.add('visually-hidden');
-		catalogItem[i].hasFocus = false;
-	});
-
-	catalogItem[i].addEventListener('mouseleave', function(evt){
-		var catalogItemBuy = this.querySelector('.catalog-item-buy');
-		if(!catalogItem[i].hasFocus) {
+	
+		catalogItemBuy[i].classList.add('visually-hidden');
+	
+		function showPrice(evt) {
+			var catalogItemBuy = catalogItem[i].querySelector('.catalog-item-buy');
+			catalogItemBuy.classList.remove('visually-hidden');
+			catalogItem[i].hasFocus = true;
+		}
+		
+		function hidePrice(evt) {
+			var catalogItemBuy = catalogItem[i].querySelector('.catalog-item-buy');
 			catalogItemBuy.classList.add('visually-hidden');
-		}		
-	});
+			catalogItem[i].hasFocus = false;
+		}
+	
+		catalogItem[i].addEventListener('mouseenter', function(evt){
+			var catalogItemBuy = this.querySelector('.catalog-item-buy');
+			catalogItemBuy.classList.remove('visually-hidden');
+		});
+	
+		catalogItem[i].addEventListener('mouseleave', function(evt){
+			var catalogItemBuy = this.querySelector('.catalog-item-buy');
+			if(!catalogItem[i].hasFocus) {
+				catalogItemBuy.classList.add('visually-hidden');
+			}		
+		});
+	
+		catalogItemLink[i].addEventListener('focus', showPrice);
+		catalogItemLink[i].addEventListener('blur', hidePrice);
+	
+		catalogItemButton[i].addEventListener('focus', showPrice);
+		catalogItemButton[i].addEventListener('blur', hidePrice);
+	}
 }
+
+animateProductCard();
+
+/* end product card animation */
+

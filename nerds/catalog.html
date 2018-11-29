@@ -5,6 +5,7 @@
 	<title>Дизайн-студия «Нёрдс»</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/nouislider.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="inner-page">
@@ -36,11 +37,23 @@
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр шаблонов</h2>
 				<form class="filter" action="https://echo.htmlacademy.ru" method="GET">
-					<fieldset>
+					<fieldset class="filter-price">
 						<legend>Стоимость:</legend>
-						<input type="range">
+						<div class="range-slider-wrapper">
+							<div class="range-slider" id="rangeSlider"></div>
+						</div>						
+						<div class="filter-price-columns">
+							<div class="filter-price-column">
+								<label  for="price-from">От</label>
+								<input class="filter-price-set" type="text" name="filter-price-lower" value="2000" id="price-from">
+							</div>
+							<div class="filter-price-column">
+								<label for="price-to">До</label>
+								<input class="filter-price-set" type="text" name="filter-price-upper" value="10000" id="price-to">
+							</div>						
+						</div>						
 					</fieldset>
-					<fieldset>
+					<fieldset class="filter-grid">
 						<legend>Сетка:</legend>
 						<ul>
 							<li class="filter-option">
@@ -57,7 +70,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset>
+					<fieldset class="filter-features">
 						<legend>Особенности:</legend>
 						<ul>
 							<li class="filter-option">
@@ -177,6 +190,20 @@
 						</div>					
 					</li>
 				</ul>
+				<ul class="pagination-list">
+                    <li class="pagination-item pagination-item-current">
+                        <a>1</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#">2</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#">3</a>
+                    </li>
+                    <li class="pagination-item pagination-item-next">
+                        <a href="#">Следующая</a>
+                    </li>
+                </ul>
 			</section>
 		</div>
 		
@@ -249,6 +276,7 @@
 	</section>	
 	<div class="modal-overlay"></div>
 
+	<script src="js/nouislider.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
